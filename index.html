@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hosgeldiniz</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/440514b735.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logo.png" ,image sizes="10px 5px"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">ANASAYFA</a></li>
+            <li><a href="">HAKKINDA</a></li>
+            <li><a href="">ÜRÜNLERİMİZ</a></li>
+            <li><a href="">VİZYONUMUZ</a></li>
+            <li><a href="">İLETİŞİM</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Hikayesi olan tasarımlar...</h1>
+        <p>
+          Kişiye özel tasarımlarla kendinizi eşsiz hissedin zırvasu blababla
+          Sevdiklerinize harika anısı olan hediyeler verim blavlvla<br />Üstelik
+          Anneler Günü'ne özel 30% indirimle
+        </p>
+        <a href="" class="hero-btn"
+          >Daha fazlası için buradan iletişime geçin.</a
+        >
+      </div>
+    </section>
+    <!-------course----->
+    <section class="course">
+      <h1>Bizimle çalışmak ister misiniz?</h1>
+      <p>Bize iletişim menüsünden CV'nizi gönderin.</p>
+    </section>
+
+    <!-------------JavaScript for Toggle Menu--->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
